@@ -13,3 +13,5 @@
 - [Git Mentoring mailing
   list](https://groups.google.com/forum/#!forum/git-mentoring): a great mailing
   list for beginners looking to learn to contribute.
+- [Git wiki](https://git.wiki.kernel.org/index.php/Main_Page): informative wiki;
+  includes links to mailing list and other important information.
