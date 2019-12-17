@@ -1,0 +1,113 @@
+% presentation source for the git-wizzard presentation
+% build with the make file
+
+\documentclass{beamer}
+\mode<presentation>
+\usetheme{Montpellier}
+\usecolortheme{rose}
+
+% preamble {{{
+
+% packages {{{
+\usepackage[normalem]{ulem}
+\usepackage{listings}
+% packages }}}
+
+% defs {{{
+\lstset{% set defaults
+    basicstyle=\ttfamily,
+    stringstyle=\ttfamily,
+    showstringspaces=false
+}
+\lstnewenvironment{shell}
+    {\lstset{language=sh}}
+    {}
+\theoremstyle{example}
+\newtheorem{exercise}{Exercise}
+% defs }}}
+
+% metadata {{{
+\title{Git Wizard 101}
+\subtitle{Pearl Hacks}
+\author{D. Ben Knoble \\ \texttt{ben.knoble@gmail.com}}
+% \urladdr[D. Ben Knoble]{https://benknoble.github.io} % or this
+\institute{UNC Chapel Hill}
+\date{23 February 2019}
+% metadata }}}
+
+% preamble }}}
+
+\begin{document} % {{{
+
+\frame{\titlepage}
+
+\part{Getting Started}
+\frame{\partpage}
+\frame{\tableofcontents[part=1]}
+
+\section{Introductions}
+\begin{frame}{About Me}
+\end{frame}
+\begin{frame}
+    \center{\includegraphics[scale=0.5]{img/git}}
+\end{frame}
+
+\section{Ground Rules}
+\begin{frame}{Ground Rules}
+    \begin{itemize}
+        \item Introduce yourself with name and pronouns
+        \item Respect other people’s pronouns
+        \item There are no dumb questions
+        \item Help your neighbor when you can
+        \item Have a good time!
+    \end{itemize}
+\end{frame}
+
+\section{Setup}
+\begin{frame}{Did You Get \texttt{git}?}
+\end{frame}
+
+\part{The Magic of \texttt{git}}
+\frame{\partpage}
+\frame{\tableofcontents[part=2]}
+
+\section{Your First Commit}
+\begin{frame}[fragile]{Lumos: Your First \sout{Spell} Commit}
+    Not the time for \emph{commitment} problems
+    \begin{exercise}[Make a commit]
+        \begin{shell}
+# this is the command-line version
+git commit
+        \end{shell}
+    \end{exercise}
+\end{frame}
+
+\section{Experimentation}
+\begin{frame}{Potions Class \& PPE\@: Experimenting Safely}
+\end{frame}
+
+\section{Collaboration}
+\begin{frame}{Accio Code! Collaborating via Pull Requests}
+\end{frame}
+
+\section{{\textdagger}Merge Conflicts{\textdagger}}
+\begin{frame}{Boggarts and Riddikulus: Merge Conflicts are \alert{not} Scary!}
+\end{frame}
+
+\part{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{block}{Who Am I?}
+    \end{block}
+    \begin{block}{Summary}
+    \end{block}
+    \begin{block}{Resources}
+    \end{block}
+    \begin{block}{Reminders}
+    \end{block}
+    \begin{block}{Upcoming Wizard Classes}
+    \end{block}
+\end{frame}
+
+% \appendix
+
+\end{document} % }}}
