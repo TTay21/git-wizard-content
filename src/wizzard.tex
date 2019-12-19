@@ -22,6 +22,11 @@
 \lstnewenvironment{shell}
     {\lstset{language=sh}}
     {}
+\hypersetup{% for links
+    colorlinks,
+    linkcolor=,
+    urlcolor=blue
+}
 \theoremstyle{example}
 \newtheorem{exercise}{Exercise}
 % defs }}}
@@ -29,7 +34,8 @@
 % metadata {{{
 \title{Git Wizard 101}
 \subtitle{Pearl Hacks}
-\author{D. Ben Knoble \\ \texttt{ben.knoble@gmail.com}}
+% \author{D. Ben Knoble \\ \texttt{ben.knoble@gmail.com}}
+\author{\href{https://benknoble.github.io}{D. Ben Knoble}}
 % \urladdr[D. Ben Knoble]{https://benknoble.github.io} % or this
 \institute{UNC Chapel Hill}
 \date{23 February 2019}
@@ -60,10 +66,8 @@
 \begin{frame}{About Me}
     \begin{itemize}
         \item He/Him/His
-        \item Charlotte, NC
         \item Senior (CS, French, Math), soon-to-be M.S. student
-        \item Plays clarinet and sings
-        \item Cyclist
+        \item \href{https://github.com/benknoble}{@benknoble} on GitHub
         \item<2-> Conversationally proficient in French, D\&D, puns
         \item<3-> And, of course, all things \texttt{git}
     \end{itemize}
