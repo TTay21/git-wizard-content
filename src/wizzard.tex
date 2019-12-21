@@ -90,11 +90,6 @@
     \end{columns}
 \end{frame}
 
-% \includegraphics[scale=0.4]{img/documents}
-% \caption{\xkcd{1459}}
-% \includegraphics[scale=0.4]{img/git_commit}
-% \caption{\xkcd{1296}}
-
 \section{Setup}
 \begin{frame}{Required setup}
     \begin{enumerate}[<+->]
@@ -119,14 +114,87 @@
 \frame{\tableofcontents[part=2]}
 
 \section{Your First Commit}
+\begin{frame}{We Don't Want To Do This}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{img/documents}
+            \caption{\xkcd{1459}}
+        \end{figure}
+
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Because we are software engineers and artists
+            \item Because there is a better way
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Instead}
+    We commit
+
+    Steps:
+    \begin{enumerate}[<+->]
+        \item Make changes
+        \item Add files
+        \item Commit
+        \item Push to update a remote
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}[fragile]{Lumos: Your First \sout{Spell} Commit}
-    Not the time for \emph{commitment} problems
+    {Not the time for \emph{commitment} problems}
     \begin{exercise}[Make a commit]
-        \begin{shell}
-# this is the command-line version
-git commit
-        \end{shell}
+        \begin{enumerate}
+            \item Create \texttt{yourname.txt}
+            \item Place your name in it
+            \item Click commit
+            \item Push to your fork
+        \end{enumerate}
     \end{exercise}
+\end{frame}
+
+\begin{frame}{Lumos: Your First \sout{Spell} Commit}
+    \begin{figure}
+        \includegraphics[scale=0.4]{img/create_ben}
+        \caption{Create \texttt{ben.txt}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Lumos: Your First \sout{Spell} Commit}
+    \begin{figure}
+        \includegraphics[scale=0.4]{img/add_ben}
+        \caption{Add \texttt{ben.txt}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Lumos: Your First \sout{Spell} Commit}
+    \begin{figure}
+        \includegraphics[scale=0.4]{img/commit_ben}
+        \caption{Commit}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Lumos: Your First \sout{Spell} Commit}
+    \begin{figure}
+        \includegraphics[scale=0.4]{img/history_ben}
+        \caption{History}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{A Note about Messages}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{img/git_commit}
+            \caption{\xkcd{1296}}
+        \end{figure}
+
+        \column{0.5\textwidth}
+        Our messages should summarize the what and describe the why.
+        \href{https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html}
+        {Here's a good format to follow.}
+    \end{columns}
 \end{frame}
 
 \section{Experimentation}
