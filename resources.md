@@ -8,6 +8,9 @@
   Please follow this. Please.
 - [Also: my favorite
   commit](https://fatbusinessman.com/2019/my-favourite-git-commit)
+- [Visualizing `git`](https://ndpsoftware.com/git-cheatsheet.html)
+- [Visualizing `git`
+  interactively](https://git-school.github.io/visualizing-git/)
 - [`git` rev news](https://git.github.io/rev_news/rev_news/): sign up for the
   newsletter! Contains developer news and links to tools, tips, and more.
 - [`git` mentoring mailing
