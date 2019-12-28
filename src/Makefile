@@ -5,7 +5,7 @@ SHELL = /bin/sh
 .SUFFIXES:
 .SUFFIXES: .pdf .tex
 
-SRC = wizzard.tex
+SRC = wizard.tex
 PDF = $(SRC:tex=pdf)
 
 LATEX = pdflatex
