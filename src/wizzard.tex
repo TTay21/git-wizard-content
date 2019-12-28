@@ -143,13 +143,15 @@
     We commit.
 
     \begin{definition}[Commit]
-        A snapshot in time of a project's \emph{content}
+        A snapshot in time of a project's \emph{content} that knows what came
+        before it.
     \end{definition}
 \end{frame}
 
 \begin{frame}{How?}
     \begin{definition}[Commit]
-        A snapshot in time of a project's \emph{content}
+        A snapshot in time of a project's \emph{content} that knows what came
+        before it.
     \end{definition}
     \begin{enumerate}[<+->]
         \item Make changes
@@ -215,6 +217,51 @@
 \end{frame}
 
 \section{Experimentation}
+\begin{frame}{Trying new things}
+    How many of you have ever\dots
+    \begin{itemize}[<+->]
+        \item edited code?
+        \item tried to undo your edits?
+        \item tried several approaches to a problem, and had to use undo/redo?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Remember this?}
+    \begin{figure}
+        \includegraphics[scale=0.4]{img/documents}
+        \caption{\xkcd{1459}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Branches}
+    Git's version of an experiment is called a \emph{branch}
+
+    \begin{definition}[Branch]
+        A pointer to a commit.
+    \end{definition}
+
+    Remember that a commit knows who it's parent is, so if I have a pointer to a
+    commit---a branch---I have an entire \emph{branch} of history in the history
+    tree.
+\end{frame}
+
+\begin{frame}{Why would I do this?}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{img/branches}
+            \caption{Some branches}
+        \end{figure}
+
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item to separate work on feature A from feature B
+            \item to experiment without affecting the main code
+            \item to make pretty graphs
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
 \begin{frame}{Potions Class \& PPE\@: Experimenting Safely}
 \end{frame}
 
