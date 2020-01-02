@@ -313,7 +313,32 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}[The experiment is a success: now what?]
+\begin{frame}{The experiment is a success: now what?}
+    We would ideally like to be able to \emph{merge} the code and history in our
+    experiemnt with the code and history from our ``main'' development.
+
+    \begin{definition}[Merge commit]
+        A commit (content snapshot) that combines history from multiple
+        branches.
+    \end{definition}
+
+    \texttt{git} is (usually) able to figure out the best way to combine code
+    and history from one branch with code and history from another.
+
+    (We will take a look later at what happens when it cannot.)
+\end{frame}
+
+\begin{frame}{Mixing Potions: Your First Merge}
+    \only<1>
+    {\begin{figure}
+        \includegraphics[scale=0.35]{img/merge_menu}
+        \caption{Setting up the merge}
+    \end{figure}}
+    \only<2>
+    {\begin{figure}
+        \includegraphics[scale=0.4]{img/merge_commit}
+        \caption{Checking the results}
+    \end{figure}}
 \end{frame}
 
 \section{Collaboration in a Distributed System}
