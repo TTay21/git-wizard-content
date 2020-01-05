@@ -349,6 +349,58 @@
 
 \section{Advanced: Dealing with Merge Conflicts}
 \begin{frame}{Boggarts and Riddikulus: Merge Conflicts are \alert{not} Scary!}
+    \begin{definition}[Merge Conflict]
+        What \texttt{git} produces when it doesn't know how to merge changes
+        together
+    \end{definition}
+
+    Most often occurrence: different edits to the same line of code
+\end{frame}
+
+\begin{frame}{The Best Practice is Doing}
+    \begin{exercise}[Creating conflicts]
+        \begin{enumerate}[<+->]
+            \item On a new branch, edit \texttt{conflicts.yaml} with \texttt{your
+                name's value}
+            \item Commit
+            \item On master, repeat \emph{with your partner's name}
+            \item Commit
+            \item Attempt a merge
+        \end{enumerate}
+    \end{exercise}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.3]{img/joe}
+            \caption{Joe}
+        \end{figure}
+        \begin{figure}
+            \includegraphics[scale=0.3]{img/jane}
+            \caption{Jane}
+        \end{figure}
+
+        \column{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.35]{img/conflicts_example}
+            \caption{Notice the conflict markers? Usually lines like
+            \texttt{<<<HEAD}, \texttt{===}, \texttt{>>>branchname}
+
+            These help you see what code came from where}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Picking sides}
+    \begin{exercise}[Resolving conflicts]
+        \begin{enumerate}
+            \item Decide which version to keep, and remove all the conflict
+                markers and the other code (I picked Jane's code).
+            \item Commit
+        \end{enumerate}
+    \end{exercise}
 \end{frame}
 
 \part{Conclusion}
