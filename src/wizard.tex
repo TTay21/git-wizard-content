@@ -270,7 +270,8 @@
             \item In \texttt{lib.py}, implement \texttt{add1} by changing
                 \texttt{pass} to \texttt{return a + 1}
             \item Commit (you've seen this before!)
-            \item Switch back to master and implement \texttt{sub1} the same way
+            \item Switch back to master and start a new branch
+            \item Implement \texttt{sub1} the same way
             \item Commit
         \end{enumerate}
     \end{exercise}
@@ -299,7 +300,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Implementing \texttt{sub1} back on master}
+\begin{frame}{Implementing \texttt{sub1} on another branch}
     \begin{figure}
         \includegraphics[scale=0.4]{img/sub1}
         \caption{The \texttt{sub1} commit}
@@ -315,7 +316,7 @@
 
 \begin{frame}{The experiment is a success: now what?}
     We would ideally like to be able to \emph{merge} the code and history in our
-    experiemnt with the code and history from our ``main'' development.
+    experiment with the code and history from our ``main'' development.
 
     \begin{definition}[Merge commit]
         A commit (content snapshot) that combines history from multiple
@@ -345,6 +346,87 @@
 
 \section{Collaboration in a Distributed System}
 \begin{frame}{Accio Code! Collaborating via Pull Requests}
+    \begin{enumerate}
+        \item Group projects anyone?
+        \item Real jobs involve teams
+        \item In fact, \emph{almost everything involves teams}
+    \end{enumerate}
+
+    \begin{block}{Conclusion}
+        We need collaboration
+    \end{block}
+\end{frame}
+
+\begin{frame}{Fundamentals of Distribution}
+    \begin{block}{Remote code}
+        We need access to remote code. We've seen \emph{push}, sending local
+        history to remote history. We need \emph{pull}, or getting remote
+        history to local history.
+    \end{block}
+
+    {\pause}
+
+    \begin{block}{History everywhere}
+        Remember that, because \texttt{git} is distributed, there are multiple
+        histories of the same project floating around! You might have one (or
+        more) on each of
+        \begin{enumerate}
+            \item your computer
+            \item GitHub, GitLab, etc.
+            \item a partner's computer
+        \end{enumerate}
+        and each one could be \emph{different}.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Pull Requests}
+    \begin{definition}[Pull Request]
+        A \emph{request} that someone else \emph{pull} your history into theirs.
+    \end{definition}
+    The common process is this:
+    \begin{itemize}
+        \item You make useful commits to your copy of a project
+        \item You ask other people to pull your new history into their copies
+    \end{itemize}
+    This almost always results in a merge being done: they probably added some
+    commits in the meantime, so \texttt{git} has to combine the two histories.
+    \begin{block}{GitHub}
+        GitHub (and other web interfaces) provide tooling to facilitate the
+        change-review-merge cycle.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{exercise}[Creating a Pull Request]
+        \begin{enumerate}
+            \item (If you haven't already) Push your master branch
+            \item Open your fork in GitHub
+            \item Click ``New Pull Request''
+            \item Change the base to your \emph{partner's} fork
+            \item Investigate the UI
+            \item Write a description
+            \item Submit
+            \item View your partner's PR on your repo
+            \item Merge it
+        \end{enumerate}
+    \end{exercise}
+
+    Synchronizing later is slightly more complicated. See the accompanying notes
+    for links and explanations.
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[scale=0.3]{img/new_pr}
+        \caption{Create a Pull Request UI}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[scale=0.3]{img/merging_pr}
+        \caption{Merging UI}
+    \end{figure}
 \end{frame}
 
 \section{Advanced: Dealing with Merge Conflicts}
@@ -354,14 +436,14 @@
         together
     \end{definition}
 
-    Most often occurrence: different edits to the same line of code
+    Most common occurrence: different edits to the same line of code
 \end{frame}
 
 \begin{frame}{The Best Practice is Doing}
     \begin{exercise}[Creating conflicts]
-        \begin{enumerate}[<+->]
-            \item On a new branch, edit \texttt{conflicts.yaml} with \texttt{your
-                name's value}
+        \begin{enumerate}
+            \item On a new branch, edit \texttt{conflicts.yaml} with
+                \texttt{your name's value}
             \item Commit
             \item On master, repeat \emph{with your partner's name}
             \item Commit
@@ -401,19 +483,28 @@
             \item Commit
         \end{enumerate}
     \end{exercise}
+
+    Most editors have settings, features, or plugins for working with merge
+    conflicts.
 \end{frame}
 
 \part{Conclusion}
 \begin{frame}{Conclusion}
     \begin{block}{Who Am I?}
+        \href{https://benknoble.github.io}{Ben Knoble}
     \end{block}
     \begin{block}{Summary}
+        \texttt{git} is a great tool for collaboration: learn it and use it!
     \end{block}
     \begin{block}{Resources}
+        Linked on GitHub:
+        \href{https://github.com/benknoble/git-wizard-content}{shortcut}
     \end{block}
     \begin{block}{Reminders}
+        Mentors are a great resource for help at Pearl Hacks
     \end{block}
     \begin{block}{Upcoming Wizard Classes}
+        TODO???
     \end{block}
 \end{frame}
 

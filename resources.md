@@ -18,3 +18,9 @@
   list for beginners looking to learn to contribute.
 - [`git` wiki](https://git.wiki.kernel.org/index.php/Main_Page): informative
   wiki; includes links to mailing list and other important information.
+- [synchronizing
+  forks](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser):
+  the browser way
+- [synchronizing
+  forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
+  the command-line way
