@@ -2,6 +2,8 @@
 % build with the make file
 
 \documentclass{beamer}
+% for flyer
+% \includeonlyframes{title,setup}
 \mode<presentation>
 \usetheme{Montpellier}
 \usecolortheme{rose}
@@ -46,7 +48,7 @@
 
 \begin{document} % {{{
 
-\frame{\titlepage}
+\frame[label=title]{\titlepage}
 
 \part{Getting Started}
 \frame{\partpage}
@@ -91,8 +93,8 @@
 \end{frame}
 
 \section{Setup}
-\begin{frame}{Required setup}
-    \begin{enumerate}[<+->]
+\begin{frame}[label=setup]{Required setup}
+    \begin{enumerate}
         \item
             \href{https://git-scm.com/book/en/v2/Getting-Started-Installing-Git}
             {\texttt{git}}
