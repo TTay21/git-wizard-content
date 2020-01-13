@@ -6,4 +6,5 @@ Related: [workshop code](https://github.com/benknoble/git-wizard-code)
 
 ## Links
 
+- [slides](./wizard.pdf)
 - [resources for all ages](./resources.md)
