@@ -24,3 +24,5 @@
 - [synchronizing
   forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
   the command-line way
+- [build your own octocat](https://myoctocat.com)---you can see mine [on my
+  blog](https://benknoble.github.io/blog/2018/12/08/octocat/)
