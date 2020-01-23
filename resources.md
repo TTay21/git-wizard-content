@@ -11,6 +11,7 @@
 - [Visualizing `git`](https://ndpsoftware.com/git-cheatsheet.html)
 - [Visualizing `git`
   interactively](https://git-school.github.io/visualizing-git/)
+- [oh shit `git`!](https://ohshitgit.com): a helpful guide for those WTF moments
 - [`git` rev news](https://git.github.io/rev_news/rev_news/): sign up for the
   newsletter! Contains developer news and links to tools, tips, and more.
 - [`git` mentoring mailing
